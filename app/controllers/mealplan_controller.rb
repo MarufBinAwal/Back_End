@@ -15,7 +15,7 @@ class MealplanController < ApplicationController
     end
 
     def index
-        mealplan = self.current_user.mealplan
+        mealplan = self.current_user.mealplan.includes(:recipies)
         render json: mealplan
     end
 
