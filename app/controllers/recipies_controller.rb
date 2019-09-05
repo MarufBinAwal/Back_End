@@ -1,4 +1,5 @@
 class RecipiesController < ApplicationController
+    skip_before_action :define_current_user, only: [:index, :show]
 
     def create
         recipe = Recipe.create(recipe_params)
@@ -27,9 +28,15 @@ class RecipiesController < ApplicationController
     def recipe_params
         params.permit(
         :name,
+        :img,
         :ingredients,
-        :description,
-        :macros
+        :intructions,
+        :calories,
+        :fat,
+        :carbohydrates,
+        :protein,
+        :fiber,
+        :servings 
         )
     end
 end
