@@ -3,12 +3,12 @@ class UsersController < ApplicationController
     skip_before_action :define_current_user, only: [ :authenticate, :create ]
 
     def index
-        users = Users.all
+        users = User.all
         render json: users
     end
 
     def create 
-        user = Users.create(user_params)
+        user = User.create(user_params)
         render json: user
         
     end

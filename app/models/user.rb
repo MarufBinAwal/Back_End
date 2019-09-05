@@ -1,7 +1,6 @@
 class User < ApplicationRecord
 
-    belongs_to :mealplan
-    has_many :recipies, through: :mealplan
+    has_one :mealplan
     has_secure_password
     validates :username, presence: true, uniqueness: true
     validates :password, length: { in: 6..20 }
