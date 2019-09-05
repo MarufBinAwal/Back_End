@@ -1,6 +1,6 @@
 class User < ApplicationRecord
 
-    has_one :mealplan
+    has_many :mealplans
     has_secure_password
     validates :username, presence: true, uniqueness: true
     validates :password, length: { in: 6..20 }

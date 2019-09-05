@@ -1,4 +1,5 @@
 class Mealplan < ApplicationRecord
     belongs_to :user
-    recipies:references
+    has_many :meals
+    has_many :recipies through: :meals
 end
