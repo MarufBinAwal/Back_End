@@ -374,3 +374,1304 @@ Processing by RecipesController#index as HTML
 Completed 200 OK in 21ms (Views: 12.8ms | ActiveRecord: 5.4ms)
 
 
+Started GET "/" for ::1 at 2019-09-06 14:36:49 -0500
+  
+PG::ConnectionBad (could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+):
+  
+pg (1.1.4) lib/pg.rb:56:in `initialize'
+pg (1.1.4) lib/pg.rb:56:in `new'
+pg (1.1.4) lib/pg.rb:56:in `connect'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:692:in `connect'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:1014:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.3) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-09-06 14:51:12 -0500
+  
+PG::ConnectionBad (FATAL:  password authentication failed for user "postgres"
+):
+  
+pg (1.1.4) lib/pg.rb:56:in `initialize'
+pg (1.1.4) lib/pg.rb:56:in `new'
+pg (1.1.4) lib/pg.rb:56:in `connect'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:692:in `connect'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:1014:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.3) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-09-06 14:53:00 -0500
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "Back_End_development" does not exist
+):
+  
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:696:in `rescue in connect'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:691:in `connect'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:1014:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.3) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-09-06 14:53:30 -0500
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "Back_End_development" does not exist
+):
+  
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:696:in `rescue in connect'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:691:in `connect'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:1014:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.3) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (425.5ms)[0m  [1m[35mCREATE DATABASE "Back_End_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2922221878039472715)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190905164104)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190905164104_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190905164104"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateMealplans (20190905164126)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "mealplans" ("id" bigserial primary key, "user_id" integer, "days" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190905164126_create_mealplans.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190905164126"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateRecipes (20190905164146)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" bigserial primary key, "name" text, "img" character varying, "ingredients" character varying, "instructions" character varying, "calories" integer, "fat" integer, "carbohydrates" integer, "protein" integer, "fiber" integer, "servings" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190905164146_create_recipes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190905164146"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateMeals (20190905205358)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (8.6ms)[0m  [1m[35mCREATE TABLE "meals" ("id" bigserial primary key, "mealplan_id" integer, "recipe_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190905205358_create_meals.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190905205358"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-06 19:59:38.304019"], ["updated_at", "2019-09-06 19:59:38.304019"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2922221878039472715)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Maruf"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Maruf"], ["password_digest", "$2a$12$yg0cqxC0allPFi30rsYZEuH1tZtNr8bYsIftbXsgg0xlxmnE/9CSi"], ["created_at", "2019-09-06 19:59:47.141106"], ["updated_at", "2019-09-06 19:59:47.141106"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Varvara"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:11
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Varvara"], ["password_digest", "$2a$12$/ou.UXD67wY5QWuljdWSfu2WAAp5izMJQXXlaMpsXC1V7r.0LKoAa"], ["created_at", "2019-09-06 19:59:47.309978"], ["updated_at", "2019-09-06 19:59:47.309978"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mRecipe Create (0.5ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "img", "ingredients", "instructions", "calories", "fat", "carbohydrates", "protein", "fiber", "servings", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Eggs and Bacon"], ["img", "https://s3.amazonaws.com/rtacabinet/recipes/beta/wp-content/uploads/2017/10/28151038/5.jpg"], ["ingredients", "2 eggs, 2 slice of bacon"], ["instructions", "In an unheated skillet, place 2 strips of bacon. Increase the heat to medium and let the bacon cook for 8 minutes, flipping halfway through. While the bacon cooks, prepare your skull eggs.\nHeat a pan over medium-high heat and add the skull egg mold. Spray the pan and mold with cooking spray and let it heat for 1 minute. Crack one egg into the eye of the mold and then crack another egg into the second eye. Season with salt & pepper and cover the pan. Let the eggs cook, covered, for 4 minutes, or until desired doneness of the egg yolk. Remove the cover, lift the mold and plate your eggs. Add the bacon to your plate for a deathly delicious breakfast."], ["calories", 350], ["fat", 28], ["carbohydrates", 2], ["protein", 21], ["fiber", 0], ["servings", 1], ["created_at", "2019-09-06 19:59:47.358649"], ["updated_at", "2019-09-06 19:59:47.358649"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "img", "ingredients", "instructions", "calories", "fat", "carbohydrates", "protein", "fiber", "servings", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Tuna Avocado Salad"], ["img", "https://images.eatthismuch.com/site_media/img/924619_Tahirah_Fo_Ferah_be330bb4-505c-4ea2-b074-26ad678577a2.jpg"], ["ingredients", "1/4 avocado, 3oz tuna"], ["instructions", "Using a fork, mash up the tuna really well until the consistency is even. Mix in the avocado until smooth. Add salt and pepper to taste. Enjoy!"], ["calories", 124], ["fat", 6], ["carbohydrates", 4], ["protein", 15], ["fiber", 3], ["servings", 1], ["created_at", "2019-09-06 19:59:47.360900"], ["updated_at", "2019-09-06 19:59:47.360900"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2019-09-06 15:00:40 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/varvara.babkova/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/varvara.babkova/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/varvara.babkova/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (1.8ms)
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for ::1 at 2019-09-06 15:00:48 -0500
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:11
+Completed 200 OK in 14ms (Views: 8.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/meals" for ::1 at 2019-09-06 15:01:20 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/meals"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/meal" for ::1 at 2019-09-06 15:01:24 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/meal"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/mealplan" for ::1 at 2019-09-06 15:01:47 -0500
+Processing by MealplanController#index as HTML
+Filter chain halted as :define_current_user rendered or redirected
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-09-06 15:02:10 -0500
+Processing by UsersController#index as HTML
+Filter chain halted as :define_current_user rendered or redirected
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2019-09-06 15:02:15 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/0" for ::1 at 2019-09-06 15:02:25 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"0"}
+Filter chain halted as :define_current_user rendered or redirected
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/0" for ::1 at 2019-09-06 15:09:05 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/varvara.babkova/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"0"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+Completed 404 Not Found in 8ms (ActiveRecord: 3.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=0):
+  
+app/controllers/users_controller.rb:17:in `show'
+Started GET "/users" for ::1 at 2019-09-06 15:09:11 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:7
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mealplans" for ::1 at 2019-09-06 15:09:19 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/mealplans"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/mealplan" for ::1 at 2019-09-06 15:09:28 -0500
+Processing by MealplanController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `mealplans' for nil:NilClass):
+  
+app/controllers/mealplan_controller.rb:20:in `index'
+Started GET "/mealplan/0" for ::1 at 2019-09-06 15:09:33 -0500
+Processing by MealplanController#show as HTML
+  Parameters: {"id"=>"0"}
+  [1m[36mMealplan Load (0.4ms)[0m  [1m[34mSELECT  "mealplans".* FROM "mealplans" WHERE "mealplans"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/mealplan_controller.rb:4
+Completed 404 Not Found in 7ms (ActiveRecord: 2.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Mealplan with 'id'=0):
+  
+app/controllers/mealplan_controller.rb:4:in `show'
+Started GET "/mealplan" for ::1 at 2019-09-06 15:09:52 -0500
+Processing by MealplanController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `mealplans' for nil:NilClass):
+  
+app/controllers/mealplan_controller.rb:20:in `index'
+Started GET "/mealplan" for ::1 at 2019-09-06 15:12:15 -0500
+Processing by MealplanController#index as HTML
+  [1m[36mMealplan Load (0.3ms)[0m  [1m[34mSELECT "mealplans".* FROM "mealplans"[0m
+  ↳ app/controllers/mealplan_controller.rb:22
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 1.2ms)
+
+
+  [1m[36mMealplan Load (0.3ms)[0m  [1m[34mSELECT  "mealplans".* FROM "mealplans" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mMealplan Load (0.4ms)[0m  [1m[34mSELECT  "mealplans".* FROM "mealplans" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mMealplan Load (0.4ms)[0m  [1m[34mSELECT  "mealplans".* FROM "mealplans" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMealplan Create (0.6ms)[0m  [1m[32mINSERT INTO "mealplans" ("user_id", "days", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["days", "Monday"], ["created_at", "2019-09-06 20:22:30.636884"], ["updated_at", "2019-09-06 20:22:30.636884"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT  "meals".* FROM "meals" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMealplan Load (0.2ms)[0m  [1m[34mSELECT  "mealplans".* FROM "mealplans" WHERE "mealplans"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMeal Create (0.5ms)[0m  [1m[32mINSERT INTO "meals" ("mealplan_id", "recipe_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["mealplan_id", 1], ["recipe_id", 1], ["created_at", "2019-09-06 20:25:02.454838"], ["updated_at", "2019-09-06 20:25:02.454838"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2922221878039472715)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2922221878039472715)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Maruf"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Varvara"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mRecipe Create (0.5ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "img", "ingredients", "instructions", "calories", "fat", "carbohydrates", "protein", "fiber", "servings", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Eggs and Bacon"], ["img", "https://s3.amazonaws.com/rtacabinet/recipes/beta/wp-content/uploads/2017/10/28151038/5.jpg"], ["ingredients", "2 eggs, 2 slice of bacon"], ["instructions", "In an unheated skillet, place 2 strips of bacon. Increase the heat to medium and let the bacon cook for 8 minutes, flipping halfway through. While the bacon cooks, prepare your skull eggs.\nHeat a pan over medium-high heat and add the skull egg mold. Spray the pan and mold with cooking spray and let it heat for 1 minute. Crack one egg into the eye of the mold and then crack another egg into the second eye. Season with salt & pepper and cover the pan. Let the eggs cook, covered, for 4 minutes, or until desired doneness of the egg yolk. Remove the cover, lift the mold and plate your eggs. Add the bacon to your plate for a deathly delicious breakfast."], ["calories", 350], ["fat", 28], ["carbohydrates", 2], ["protein", 21], ["fiber", 0], ["servings", 1], ["created_at", "2019-09-06 20:31:27.983626"], ["updated_at", "2019-09-06 20:31:27.983626"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:33
+  [1m[36mRecipe Create (0.4ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "img", "ingredients", "instructions", "calories", "fat", "carbohydrates", "protein", "fiber", "servings", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Tuna Avocado Salad"], ["img", "https://images.eatthismuch.com/site_media/img/924619_Tahirah_Fo_Ferah_be330bb4-505c-4ea2-b074-26ad678577a2.jpg"], ["ingredients", "1/4 avocado, 3oz tuna"], ["instructions", "Using a fork, mash up the tuna really well until the consistency is even. Mix in the avocado until smooth. Add salt and pepper to taste. Enjoy!"], ["calories", 124], ["fat", 6], ["carbohydrates", 4], ["protein", 15], ["fiber", 3], ["servings", 1], ["created_at", "2019-09-06 20:31:27.987484"], ["updated_at", "2019-09-06 20:31:27.987484"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:39
+Started GET "/mealplan" for ::1 at 2019-09-06 15:31:40 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/varvara.babkova/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MealplanController#index as HTML
+  [1m[36mMealplan Load (0.3ms)[0m  [1m[34mSELECT "mealplans".* FROM "mealplans"[0m
+  ↳ app/controllers/mealplan_controller.rb:22
+Completed 200 OK in 11ms (Views: 4.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/meals" for ::1 at 2019-09-06 15:31:59 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/meals"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/meal" for ::1 at 2019-09-06 15:32:06 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/meal"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/recipes" for ::1 at 2019-09-06 15:32:20 -0500
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:11
+Completed 200 OK in 14ms (Views: 9.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/mealplan" for ::1 at 2019-09-06 15:37:32 -0500
+  
+SyntaxError (/Users/varvara.babkova/dev/Projects/KetoPlanner/Back_End/app/controllers/mealplan_controller.rb:22: syntax error, unexpected [, expecting do or '{' or '('
+... render json: mealplans, only [:id, :days], include: :recipes
+...                              ^
+/Users/varvara.babkova/dev/Projects/KetoPlanner/Back_End/app/controllers/mealplan_controller.rb:22: syntax error, unexpected ',', expecting end
+...: mealplans, only [:id, :days], include: :recipes
+...                              ^):
+  
+app/controllers/mealplan_controller.rb:22: syntax error, unexpected [, expecting do or '{' or '('
+app/controllers/mealplan_controller.rb:22: syntax error, unexpected ',', expecting end
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mMealplan Load (0.3ms)[0m  [1m[34mSELECT  "mealplans".* FROM "mealplans" ORDER BY "mealplans"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" INNER JOIN "meals" ON "recipes"."id" = "meals"."recipe_id" WHERE "meals"."mealplan_id" = $1 LIMIT $2[0m  [["mealplan_id", 1], ["LIMIT", 11]]
+Started GET "/mealplan" for ::1 at 2019-09-06 15:40:20 -0500
+Processing by MealplanController#index as HTML
+  [1m[36mMealplan Load (0.4ms)[0m  [1m[34mSELECT "mealplans".* FROM "mealplans"[0m
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" INNER JOIN "meals" ON "recipes"."id" = "meals"."recipe_id" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 1]]
+  ↳ app/controllers/mealplan_controller.rb:22
+Completed 200 OK in 33ms (Views: 25.5ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/mealplan" for ::1 at 2019-09-06 15:43:14 -0500
+Processing by MealplanController#index as HTML
+  [1m[36mMealplan Load (0.2ms)[0m  [1m[34mSELECT "mealplans".* FROM "mealplans"[0m
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 1]]
+  ↳ app/controllers/mealplan_controller.rb:22
+Completed 200 OK in 25ms (Views: 17.4ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/mealplan" for ::1 at 2019-09-06 15:43:32 -0500
+Processing by MealplanController#index as HTML
+  [1m[36mMealplan Load (0.2ms)[0m  [1m[34mSELECT "mealplans".* FROM "mealplans"[0m
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" INNER JOIN "meals" ON "recipes"."id" = "meals"."recipe_id" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 1]]
+  ↳ app/controllers/mealplan_controller.rb:22
+Completed 200 OK in 22ms (Views: 14.9ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/mealplan" for ::1 at 2019-09-06 15:50:50 -0500
+Processing by MealplanController#index as HTML
+  [1m[36mMealplan Load (0.5ms)[0m  [1m[34mSELECT "mealplans".* FROM "mealplans"[0m
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 1]]
+  ↳ app/controllers/mealplan_controller.rb:22
+Completed 200 OK in 24ms (Views: 15.1ms | ActiveRecord: 6.9ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Maruf"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Varvara"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mRecipe Create (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "img", "ingredients", "instructions", "calories", "fat", "carbohydrates", "protein", "fiber", "servings", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Eggs and Bacon"], ["img", "https://s3.amazonaws.com/rtacabinet/recipes/beta/wp-content/uploads/2017/10/28151038/5.jpg"], ["ingredients", "2 eggs, 2 slice of bacon"], ["instructions", "In an unheated skillet, place 2 strips of bacon. Increase the heat to medium and let the bacon cook for 8 minutes, flipping halfway through. While the bacon cooks, prepare your skull eggs.\nHeat a pan over medium-high heat and add the skull egg mold. Spray the pan and mold with cooking spray and let it heat for 1 minute. Crack one egg into the eye of the mold and then crack another egg into the second eye. Season with salt & pepper and cover the pan. Let the eggs cook, covered, for 4 minutes, or until desired doneness of the egg yolk. Remove the cover, lift the mold and plate your eggs. Add the bacon to your plate for a deathly delicious breakfast."], ["calories", 350], ["fat", 28], ["carbohydrates", 2], ["protein", 21], ["fiber", 0], ["servings", 1], ["created_at", "2019-09-06 20:52:02.037829"], ["updated_at", "2019-09-06 20:52:02.037829"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:33
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "img", "ingredients", "instructions", "calories", "fat", "carbohydrates", "protein", "fiber", "servings", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Tuna Avocado Salad"], ["img", "https://images.eatthismuch.com/site_media/img/924619_Tahirah_Fo_Ferah_be330bb4-505c-4ea2-b074-26ad678577a2.jpg"], ["ingredients", "1/4 avocado, 3oz tuna"], ["instructions", "Using a fork, mash up the tuna really well until the consistency is even. Mix in the avocado until smooth. Add salt and pepper to taste. Enjoy!"], ["calories", 124], ["fat", 6], ["carbohydrates", 4], ["protein", 15], ["fiber", 3], ["servings", 1], ["created_at", "2019-09-06 20:52:02.040587"], ["updated_at", "2019-09-06 20:52:02.040587"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE DATABASE "Back_End_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (7909.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "Back_End_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (8010.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "Back_End_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2922221878039472715)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateMeals (20190905205358)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.2ms)[0m  [1m[35mDROP TABLE "meals"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190905205358"]]
+  ↳ bin/rails:9
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2922221878039472715)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2922221878039472715)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateRecipes (20190905164146)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE "recipes"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190905164146"]]
+  ↳ bin/rails:9
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(2922221878039472715)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2922221878039472715)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateMealplans (20190905164126)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1.9ms)[0m  [1m[35mDROP TABLE "mealplans"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190905164126"]]
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(2922221878039472715)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2922221878039472715)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190905164104)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190905164104"]]
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2922221878039472715)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2922221878039472715)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190905164104)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190905164104_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190905164104"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateMealplans (20190905164126)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "mealplans" ("id" bigserial primary key, "user_id" integer, "days" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190905164126_create_mealplans.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190905164126"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateRecipes (20190905164146)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" bigserial primary key, "name" text, "img" character varying, "ingredients" character varying, "instructions" character varying, "category" character varying, "calories" integer, "fat" integer, "carbohydrates" integer, "protein" integer, "fiber" integer, "servings" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190905164146_create_recipes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190905164146"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateMeals (20190905205358)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "meals" ("id" bigserial primary key, "mealplan_id" integer, "recipe_id" integer, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190905205358_create_meals.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190905205358"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2922221878039472715)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Maruf"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Maruf"], ["password_digest", "$2a$12$h/FF2XtMnBxQhHp6vJ73leq1QPcjdolFqg0daoenEs2TRte7BbtWm"], ["created_at", "2019-09-06 20:55:06.176281"], ["updated_at", "2019-09-06 20:55:06.176281"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Varvara"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:11
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Varvara"], ["password_digest", "$2a$12$T/ynh8ZaXaSc6J.knXtm.eVs0CHg5BEfnLolmnpPaSHrlCPZij9M6"], ["created_at", "2019-09-06 20:55:06.348642"], ["updated_at", "2019-09-06 20:55:06.348642"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mMealplan Create (0.7ms)[0m  [1m[32mINSERT INTO "mealplans" ("user_id", "days", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["days", "Monday"], ["created_at", "2019-09-06 20:55:06.360331"], ["updated_at", "2019-09-06 20:55:06.360331"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:14
+  [1m[36mMealplan Create (0.3ms)[0m  [1m[32mINSERT INTO "mealplans" ("user_id", "days", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["days", "Tueday"], ["created_at", "2019-09-06 20:55:06.364159"], ["updated_at", "2019-09-06 20:55:06.364159"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[36mMealplan Create (0.3ms)[0m  [1m[32mINSERT INTO "mealplans" ("user_id", "days", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["days", "Wednesday"], ["created_at", "2019-09-06 20:55:06.366918"], ["updated_at", "2019-09-06 20:55:06.366918"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mMealplan Create (0.4ms)[0m  [1m[32mINSERT INTO "mealplans" ("user_id", "days", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["days", "Thursday"], ["created_at", "2019-09-06 20:55:06.370189"], ["updated_at", "2019-09-06 20:55:06.370189"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[36mMealplan Create (0.5ms)[0m  [1m[32mINSERT INTO "mealplans" ("user_id", "days", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["days", "Friday"], ["created_at", "2019-09-06 20:55:06.375041"], ["updated_at", "2019-09-06 20:55:06.375041"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mMealplan Create (0.3ms)[0m  [1m[32mINSERT INTO "mealplans" ("user_id", "days", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["days", "Saturday"], ["created_at", "2019-09-06 20:55:06.377478"], ["updated_at", "2019-09-06 20:55:06.377478"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mMealplan Create (0.2ms)[0m  [1m[32mINSERT INTO "mealplans" ("user_id", "days", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["days", "Sunday"], ["created_at", "2019-09-06 20:55:06.380014"], ["updated_at", "2019-09-06 20:55:06.380014"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mRecipe Create (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "img", "ingredients", "instructions", "calories", "fat", "carbohydrates", "protein", "fiber", "servings", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Eggs and Bacon"], ["img", "https://s3.amazonaws.com/rtacabinet/recipes/beta/wp-content/uploads/2017/10/28151038/5.jpg"], ["ingredients", "2 eggs, 2 slice of bacon"], ["instructions", "In an unheated skillet, place 2 strips of bacon. Increase the heat to medium and let the bacon cook for 8 minutes, flipping halfway through. While the bacon cooks, prepare your skull eggs.\nHeat a pan over medium-high heat and add the skull egg mold. Spray the pan and mold with cooking spray and let it heat for 1 minute. Crack one egg into the eye of the mold and then crack another egg into the second eye. Season with salt & pepper and cover the pan. Let the eggs cook, covered, for 4 minutes, or until desired doneness of the egg yolk. Remove the cover, lift the mold and plate your eggs. Add the bacon to your plate for a deathly delicious breakfast."], ["calories", 350], ["fat", 28], ["carbohydrates", 2], ["protein", 21], ["fiber", 0], ["servings", 1], ["created_at", "2019-09-06 20:55:06.397427"], ["updated_at", "2019-09-06 20:55:06.397427"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:33
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "img", "ingredients", "instructions", "calories", "fat", "carbohydrates", "protein", "fiber", "servings", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Tuna Avocado Salad"], ["img", "https://images.eatthismuch.com/site_media/img/924619_Tahirah_Fo_Ferah_be330bb4-505c-4ea2-b074-26ad678577a2.jpg"], ["ingredients", "1/4 avocado, 3oz tuna"], ["instructions", "Using a fork, mash up the tuna really well until the consistency is even. Mix in the avocado until smooth. Add salt and pepper to taste. Enjoy!"], ["calories", 124], ["fat", 6], ["carbohydrates", 4], ["protein", 15], ["fiber", 3], ["servings", 1], ["created_at", "2019-09-06 20:55:06.399774"], ["updated_at", "2019-09-06 20:55:06.399774"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mMealplan Load (0.2ms)[0m  [1m[34mSELECT  "mealplans".* FROM "mealplans" WHERE "mealplans"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[36mMeal Create (0.4ms)[0m  [1m[32mINSERT INTO "meals" ("mealplan_id", "recipe_id", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["mealplan_id", 1], ["recipe_id", 1], ["name", "Breakfast"], ["created_at", "2019-09-06 20:55:06.410348"], ["updated_at", "2019-09-06 20:55:06.410348"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+Started GET "/" for ::1 at 2019-09-06 15:55:20 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/varvara.babkova/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/varvara.babkova/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/varvara.babkova/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.1ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mealplan" for ::1 at 2019-09-06 15:55:27 -0500
+Processing by MealplanController#index as HTML
+  [1m[36mMealplan Load (0.5ms)[0m  [1m[34mSELECT "mealplans".* FROM "mealplans"[0m
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 1]]
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 2]]
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 3]]
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 4]]
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 5]]
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 6]]
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 7]]
+  ↳ app/controllers/mealplan_controller.rb:22
+Completed 200 OK in 26ms (Views: 15.3ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/mealplan" for ::1 at 2019-09-06 15:56:43 -0500
+Processing by MealplanController#index as HTML
+  [1m[36mMealplan Load (0.4ms)[0m  [1m[34mSELECT "mealplans".* FROM "mealplans"[0m
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 1]]
+  ↳ app/controllers/mealplan_controller.rb:22
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 4.7ms)
+
+
+  
+NoMethodError (undefined method `include' for #<Mealplan:0x00007fae8248a7f0>):
+  
+app/controllers/mealplan_controller.rb:22:in `index'
+Started GET "/mealplan" for ::1 at 2019-09-06 15:59:42 -0500
+  
+SyntaxError (/Users/varvara.babkova/dev/Projects/KetoPlanner/Back_End/app/controllers/mealplan_controller.rb:22: syntax error, unexpected '}', expecting =>
+...=> {:only => :name},  :recipes} # :meals, include: :recipes
+...                              ^
+/Users/varvara.babkova/dev/Projects/KetoPlanner/Back_End/app/controllers/mealplan_controller.rb:41: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/mealplan_controller.rb:22: syntax error, unexpected '}', expecting =>
+app/controllers/mealplan_controller.rb:41: syntax error, unexpected end-of-input, expecting end
+Started GET "/mealplan" for ::1 at 2019-09-06 16:29:25 -0500
+  
+SyntaxError (/Users/varvara.babkova/dev/Projects/KetoPlanner/Back_End/app/controllers/mealplan_controller.rb:22: syntax error, unexpected ':', expecting '}'
+...>{:meals => {:only => :name}  :recipes} # :meals, include: :...
+...                              ^
+/Users/varvara.babkova/dev/Projects/KetoPlanner/Back_End/app/controllers/mealplan_controller.rb:41: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/mealplan_controller.rb:22: syntax error, unexpected ':', expecting '}'
+app/controllers/mealplan_controller.rb:41: syntax error, unexpected end-of-input, expecting end
+Started GET "/mealplan" for ::1 at 2019-09-06 16:31:06 -0500
+  
+SyntaxError (/Users/varvara.babkova/dev/Projects/KetoPlanner/Back_End/app/controllers/mealplan_controller.rb:22: syntax error, unexpected '}', expecting =>
+...> {:only => :name},  :recipes } # :meals, include: :recipes
+...                              ^
+/Users/varvara.babkova/dev/Projects/KetoPlanner/Back_End/app/controllers/mealplan_controller.rb:41: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/mealplan_controller.rb:22: syntax error, unexpected '}', expecting =>
+app/controllers/mealplan_controller.rb:41: syntax error, unexpected end-of-input, expecting end
+Started GET "/mealplan" for ::1 at 2019-09-06 16:31:22 -0500
+  
+SyntaxError (/Users/varvara.babkova/dev/Projects/KetoPlanner/Back_End/app/controllers/mealplan_controller.rb:22: syntax error, unexpected ',', expecting =>
+... :days],  :include => {:meals ,  :recipes } # :meals, includ...
+...                              ^
+/Users/varvara.babkova/dev/Projects/KetoPlanner/Back_End/app/controllers/mealplan_controller.rb:41: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/mealplan_controller.rb:22: syntax error, unexpected ',', expecting =>
+app/controllers/mealplan_controller.rb:41: syntax error, unexpected end-of-input, expecting end
+Started GET "/mealplan" for ::1 at 2019-09-06 16:31:36 -0500
+  
+SyntaxError (/Users/varvara.babkova/dev/Projects/KetoPlanner/Back_End/app/controllers/mealplan_controller.rb:22: syntax error, unexpected ':', expecting =>
+... :days],  :include => {:meals :recipes } # :meals, include: ...
+...                              ^
+/Users/varvara.babkova/dev/Projects/KetoPlanner/Back_End/app/controllers/mealplan_controller.rb:41: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/mealplan_controller.rb:22: syntax error, unexpected ':', expecting =>
+app/controllers/mealplan_controller.rb:41: syntax error, unexpected end-of-input, expecting end
+Started GET "/mealplan" for ::1 at 2019-09-06 16:33:05 -0500
+Processing by MealplanController#index as HTML
+  [1m[36mMealplan Load (0.6ms)[0m  [1m[34mSELECT "mealplans".* FROM "mealplans"[0m
+  ↳ app/controllers/mealplan_controller.rb:23
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 1]]
+  ↳ app/controllers/mealplan_controller.rb:23
+  [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 2]]
+  ↳ app/controllers/mealplan_controller.rb:23
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 3]]
+  ↳ app/controllers/mealplan_controller.rb:23
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 4]]
+  ↳ app/controllers/mealplan_controller.rb:23
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 5]]
+  ↳ app/controllers/mealplan_controller.rb:23
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 6]]
+  ↳ app/controllers/mealplan_controller.rb:23
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 7]]
+  ↳ app/controllers/mealplan_controller.rb:23
+Completed 200 OK in 30ms (Views: 18.3ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/mealplan" for ::1 at 2019-09-06 16:33:33 -0500
+Processing by MealplanController#index as HTML
+  [1m[36mMealplan Load (0.2ms)[0m  [1m[34mSELECT "mealplans".* FROM "mealplans"[0m
+  ↳ app/controllers/mealplan_controller.rb:23
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 1]]
+  ↳ app/controllers/mealplan_controller.rb:23
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 6.0ms)
+
+
+  
+NoMethodError (undefined method `recipes' for #<Meal:0x00007fae83b455d0>
+Did you mean?  recipe
+               recipe=):
+  
+app/controllers/mealplan_controller.rb:23:in `index'
+Started GET "/mealplan" for ::1 at 2019-09-06 16:34:06 -0500
+Processing by MealplanController#index as HTML
+  [1m[36mMealplan Load (0.2ms)[0m  [1m[34mSELECT "mealplans".* FROM "mealplans"[0m
+  ↳ app/controllers/mealplan_controller.rb:23
+  [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 1]]
+  ↳ app/controllers/mealplan_controller.rb:23
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 4.9ms)
+
+
+  
+NoMethodError (undefined method `recipes' for #<Meal:0x00007fae82275a78>
+Did you mean?  recipe
+               recipe=):
+  
+app/controllers/mealplan_controller.rb:23:in `index'
+Started GET "/mealplan" for ::1 at 2019-09-06 16:36:14 -0500
+Processing by MealplanController#index as HTML
+  [1m[36mMealplan Load (0.4ms)[0m  [1m[34mSELECT "mealplans".* FROM "mealplans"[0m
+  ↳ app/controllers/mealplan_controller.rb:23
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 1]]
+  ↳ app/controllers/mealplan_controller.rb:23
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" INNER JOIN "meals" ON "recipes"."id" = "meals"."recipe_id" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 1]]
+  ↳ app/controllers/mealplan_controller.rb:23
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/mealplan_controller.rb:23
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 7.2ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/mealplan_controller.rb:23:in `index'
+Started GET "/mealplan" for ::1 at 2019-09-06 16:36:39 -0500
+Processing by MealplanController#index as HTML
+  [1m[36mMealplan Load (0.3ms)[0m  [1m[34mSELECT "mealplans".* FROM "mealplans"[0m
+  ↳ app/controllers/mealplan_controller.rb:23
+  [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 1]]
+  ↳ app/controllers/mealplan_controller.rb:23
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" INNER JOIN "meals" ON "recipes"."id" = "meals"."recipe_id" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 1]]
+  ↳ app/controllers/mealplan_controller.rb:23
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/mealplan_controller.rb:23
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 7.3ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/mealplan_controller.rb:23:in `index'
+Started GET "/mealplan" for ::1 at 2019-09-06 16:37:38 -0500
+  
+SyntaxError (/Users/varvara.babkova/dev/Projects/KetoPlanner/Back_End/app/controllers/mealplan_controller.rb:29: syntax error, unexpected end, expecting '}'
+    end
+    ^~~
+/Users/varvara.babkova/dev/Projects/KetoPlanner/Back_End/app/controllers/mealplan_controller.rb:44: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/mealplan_controller.rb:29: syntax error, unexpected end, expecting '}'
+app/controllers/mealplan_controller.rb:44: syntax error, unexpected end-of-input, expecting end
+Started GET "/mealplan" for ::1 at 2019-09-06 16:37:50 -0500
+Processing by MealplanController#index as HTML
+  [1m[36mMealplan Load (0.3ms)[0m  [1m[34mSELECT "mealplans".* FROM "mealplans"[0m
+  ↳ app/controllers/mealplan_controller.rb:23
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 1]]
+  ↳ app/controllers/mealplan_controller.rb:23
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 4.0ms)
+
+
+  
+NoMethodError (undefined method `recipes' for #<Meal:0x00007fae800f9098>
+Did you mean?  recipe
+               recipe=):
+  
+app/controllers/mealplan_controller.rb:23:in `index'
+Started GET "/mealplan" for ::1 at 2019-09-06 16:38:42 -0500
+Processing by MealplanController#index as HTML
+  [1m[36mMealplan Load (0.3ms)[0m  [1m[34mSELECT "mealplans".* FROM "mealplans"[0m
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 1]]
+  ↳ app/controllers/mealplan_controller.rb:22
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 4.8ms)
+
+
+  
+NoMethodError (undefined method `recipes' for #<Meal:0x00007fae8398c590>
+Did you mean?  recipe
+               recipe=):
+  
+app/controllers/mealplan_controller.rb:22:in `index'
+Started GET "/mealplan" for ::1 at 2019-09-06 16:38:52 -0500
+Processing by MealplanController#index as HTML
+  [1m[36mMealplan Load (0.2ms)[0m  [1m[34mSELECT "mealplans".* FROM "mealplans"[0m
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 1]]
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 2]]
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 3]]
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 4]]
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 5]]
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 6]]
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 7]]
+  ↳ app/controllers/mealplan_controller.rb:22
+Completed 200 OK in 38ms (Views: 28.0ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/mealplan" for ::1 at 2019-09-06 16:39:36 -0500
+  
+SyntaxError (/Users/varvara.babkova/dev/Projects/KetoPlanner/Back_End/app/controllers/mealplan_controller.rb:22: syntax error, unexpected '}', expecting =>
+...de => :recipe, :only => {:name}}} 
+...                              ^
+/Users/varvara.babkova/dev/Projects/KetoPlanner/Back_End/app/controllers/mealplan_controller.rb:43: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/mealplan_controller.rb:22: syntax error, unexpected '}', expecting =>
+app/controllers/mealplan_controller.rb:43: syntax error, unexpected end-of-input, expecting end
+Started GET "/mealplan" for ::1 at 2019-09-06 16:40:15 -0500
+Processing by MealplanController#index as HTML
+  [1m[36mMealplan Load (0.2ms)[0m  [1m[34mSELECT "mealplans".* FROM "mealplans"[0m
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 1]]
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 2]]
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 3]]
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 4]]
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 5]]
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 6]]
+  ↳ app/controllers/mealplan_controller.rb:22
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."mealplan_id" = $1[0m  [["mealplan_id", 7]]
+  ↳ app/controllers/mealplan_controller.rb:22
+Completed 200 OK in 27ms (Views: 19.6ms | ActiveRecord: 6.2ms)
+
+
