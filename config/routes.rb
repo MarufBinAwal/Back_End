@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   resources :users
   resources :mealplan
-  resources :recipies
+  resources :recipes
 
   # Route to authenticate user 
   post '/users/authenticate', to: 'users#authenticate' 

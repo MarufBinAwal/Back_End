@@ -1,4 +1,4 @@
-class RecipiesController < ApplicationController
+class RecipesController < ApplicationController
     skip_before_action :define_current_user, only: [:index, :show]
 
     def create
@@ -7,8 +7,8 @@ class RecipiesController < ApplicationController
     end
     
     def index
-        recipies = Recipe.all
-        render json: recipies
+        recipes = Recipe.all
+        render json: recipes
     end
 
     def show
@@ -30,7 +30,7 @@ class RecipiesController < ApplicationController
         :name,
         :img,
         :ingredients,
-        :intructions,
+        :instructions,
         :calories,
         :fat,
         :carbohydrates,

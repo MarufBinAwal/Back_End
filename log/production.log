@@ -28,3 +28,373 @@ D, [2019-09-06T11:19:04.501035 #70168] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m
 D, [2019-09-06T11:19:04.503012 #70168] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "production"], ["created_at", "2019-09-06 16:19:04.501322"], ["updated_at", "2019-09-06 16:19:04.501322"]]
 D, [2019-09-06T11:19:04.504048 #70168] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
 D, [2019-09-06T11:19:04.505108 #70168] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_advisory_unlock(6188764255880135685)[0m
+D, [2019-09-06T11:56:15.646005 #71143] DEBUG -- :   [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T11:56:15.902256 #71143] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T11:56:15.905120 #71143] DEBUG -- :   [1m[36mUser Exists (1.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Maruf"], ["LIMIT", 1]]
+D, [2019-09-06T11:56:15.909003 #71143] DEBUG -- :   [1m[36mUser Create (3.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Maruf"], ["password_digest", "$2a$12$h2XiK1gXyTV5lUHX51kiBeR8uruIVifm62CM9vxismxc.GGGRTzaS"], ["created_at", "2019-09-06 16:56:15.905384"], ["updated_at", "2019-09-06 16:56:15.905384"]]
+D, [2019-09-06T11:56:15.911249 #71143] DEBUG -- :   [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-09-06T11:56:16.136592 #71143] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T11:56:16.137383 #71143] DEBUG -- :   [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Varvara"], ["LIMIT", 1]]
+D, [2019-09-06T11:56:16.138072 #71143] DEBUG -- :   [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Varvara"], ["password_digest", "$2a$12$ULtPnqVDyvZYLZ.zEx8X9.xMzLtYEt851k8V7Eknk.TX8OxyMP3S6"], ["created_at", "2019-09-06 16:56:16.137490"], ["updated_at", "2019-09-06 16:56:16.137490"]]
+D, [2019-09-06T11:56:16.138808 #71143] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-09-06T11:57:08.016656 #71171] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T11:57:08.260208 #71171] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T11:57:08.261869 #71171] DEBUG -- :   [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Maruf"], ["LIMIT", 1]]
+D, [2019-09-06T11:57:08.273929 #71171] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T11:57:08.490558 #71171] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T11:57:08.491356 #71171] DEBUG -- :   [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Varvara"], ["LIMIT", 1]]
+D, [2019-09-06T11:57:08.492090 #71171] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T13:43:37.001633 #71664] DEBUG -- :   [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T13:43:37.282889 #71664] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T13:43:37.297756 #71664] DEBUG -- :   [1m[36mUser Exists (11.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Maruf"], ["LIMIT", 1]]
+D, [2019-09-06T13:43:37.303642 #71664] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T13:43:37.547294 #71664] DEBUG -- :   [1m[35m (9.0ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T13:43:37.548948 #71664] DEBUG -- :   [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Varvara"], ["LIMIT", 1]]
+D, [2019-09-06T13:43:37.550346 #71664] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T13:44:54.553987 #71690] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6188764255880135685)[0m
+D, [2019-09-06T13:44:54.570373 #71690] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T13:44:54.582767 #71690] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (5.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2019-09-06T13:44:54.599601 #71690] DEBUG -- :   [1m[35m (8.0ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T13:44:54.601421 #71690] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-09-06T13:44:54.602315 #71690] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(6188764255880135685)[0m
+D, [2019-09-06T13:45:02.384544 #71707] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T13:45:02.630105 #71707] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T13:45:02.631819 #71707] DEBUG -- :   [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Maruf"], ["LIMIT", 1]]
+D, [2019-09-06T13:45:02.637467 #71707] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T13:45:02.866608 #71707] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T13:45:02.867437 #71707] DEBUG -- :   [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Varvara"], ["LIMIT", 1]]
+D, [2019-09-06T13:45:02.868283 #71707] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T13:45:44.082820 #71725] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T13:45:44.086591 #71725] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+D, [2019-09-06T13:45:44.087546 #71725] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T13:45:44.088624 #71725] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+D, [2019-09-06T13:45:44.089411 #71725] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T13:45:44.090691 #71725] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+D, [2019-09-06T13:46:11.738358 #71745] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T13:46:11.739666 #71745] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T13:46:11.740484 #71745] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T13:46:11.752775 #71745] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6188764255880135685)[0m
+D, [2019-09-06T13:46:11.754736 #71745] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+I, [2019-09-06T13:46:11.754993 #71745]  INFO -- : Migrating to CreateMeals (20190905205358)
+D, [2019-09-06T13:46:11.758609 #71745] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T13:46:11.775546 #71745] DEBUG -- :   [1m[35m (11.1ms)[0m  [1m[35mDROP TABLE "meals"[0m
+D, [2019-09-06T13:46:11.778378 #71745] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Destroy (1.8ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190905205358"]]
+D, [2019-09-06T13:46:11.783248 #71745] DEBUG -- :   [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-09-06T13:46:11.783631 #71745] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6188764255880135685)[0m
+D, [2019-09-06T13:46:20.960233 #71762] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T13:46:20.961644 #71762] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T13:46:20.962374 #71762] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T13:46:20.964033 #71762] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6188764255880135685)[0m
+D, [2019-09-06T13:46:20.964773 #71762] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+I, [2019-09-06T13:46:20.964884 #71762]  INFO -- : Migrating to CreateRecipies (20190905164146)
+D, [2019-09-06T13:46:20.969504 #71762] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T13:46:20.972560 #71762] DEBUG -- :   [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE "recipies"[0m
+D, [2019-09-06T13:46:20.973897 #71762] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190905164146"]]
+D, [2019-09-06T13:46:20.975546 #71762] DEBUG -- :   [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-09-06T13:46:20.975874 #71762] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6188764255880135685)[0m
+D, [2019-09-06T13:46:32.535463 #71779] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T13:46:32.537150 #71779] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T13:46:32.538098 #71779] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T13:46:32.539746 #71779] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6188764255880135685)[0m
+D, [2019-09-06T13:46:32.540500 #71779] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+I, [2019-09-06T13:46:32.540620 #71779]  INFO -- : Migrating to CreateMealplans (20190905164126)
+D, [2019-09-06T13:46:32.552536 #71779] DEBUG -- :   [1m[35m (9.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T13:46:32.565811 #71779] DEBUG -- :   [1m[35m (7.5ms)[0m  [1m[35mDROP TABLE "mealplans"[0m
+D, [2019-09-06T13:46:32.568460 #71779] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Destroy (0.8ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190905164126"]]
+D, [2019-09-06T13:46:32.572136 #71779] DEBUG -- :   [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-09-06T13:46:32.572679 #71779] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6188764255880135685)[0m
+D, [2019-09-06T13:46:44.132655 #71796] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T13:46:44.133947 #71796] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T13:46:44.134669 #71796] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T13:46:44.136298 #71796] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6188764255880135685)[0m
+D, [2019-09-06T13:46:44.137200 #71796] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+I, [2019-09-06T13:46:44.137340 #71796]  INFO -- : Migrating to CreateUsers (20190905164104)
+D, [2019-09-06T13:46:44.139576 #71796] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T13:46:44.153318 #71796] DEBUG -- :   [1m[35m (11.7ms)[0m  [1m[35mDROP TABLE "users"[0m
+D, [2019-09-06T13:46:44.154745 #71796] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190905164104"]]
+D, [2019-09-06T13:46:44.158456 #71796] DEBUG -- :   [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-09-06T13:46:44.158832 #71796] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6188764255880135685)[0m
+D, [2019-09-06T13:46:54.033617 #71813] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T13:46:54.035198 #71813] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T13:46:54.036877 #71813] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6188764255880135685)[0m
+D, [2019-09-06T13:46:54.037682 #71813] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T13:46:54.038071 #71813] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6188764255880135685)[0m
+D, [2019-09-06T13:47:02.435600 #71830] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6188764255880135685)[0m
+D, [2019-09-06T13:47:02.441825 #71830] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+I, [2019-09-06T13:47:02.442239 #71830]  INFO -- : Migrating to CreateUsers (20190905164104)
+D, [2019-09-06T13:47:02.443008 #71830] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T13:47:02.460478 #71830] DEBUG -- :   [1m[35m (16.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+D, [2019-09-06T13:47:02.462955 #71830] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190905164104"]]
+D, [2019-09-06T13:47:02.463732 #71830] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+I, [2019-09-06T13:47:02.463810 #71830]  INFO -- : Migrating to CreateMealplans (20190905164126)
+D, [2019-09-06T13:47:02.464577 #71830] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T13:47:02.468617 #71830] DEBUG -- :   [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "mealplans" ("id" bigserial primary key, "user_id" integer, "days" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+D, [2019-09-06T13:47:02.470250 #71830] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190905164126"]]
+D, [2019-09-06T13:47:02.471279 #71830] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+I, [2019-09-06T13:47:02.471389 #71830]  INFO -- : Migrating to CreateRecipies (20190905164146)
+D, [2019-09-06T13:47:02.472338 #71830] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T13:47:02.477068 #71830] DEBUG -- :   [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "recipies" ("id" bigserial primary key, "name" text, "img" character varying, "ingredients" character varying, "intructions" character varying, "calories" integer, "fat" integer, "carbohydrates" integer, "protein" integer, "fiber" integer, "servings" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+D, [2019-09-06T13:47:02.477927 #71830] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190905164146"]]
+D, [2019-09-06T13:47:02.478489 #71830] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+I, [2019-09-06T13:47:02.478559 #71830]  INFO -- : Migrating to CreateMeals (20190905205358)
+D, [2019-09-06T13:47:02.479255 #71830] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T13:47:02.482400 #71830] DEBUG -- :   [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "meals" ("id" bigserial primary key, "mealplan_id" integer, "recipe_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+D, [2019-09-06T13:47:02.483322 #71830] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190905205358"]]
+D, [2019-09-06T13:47:02.483887 #71830] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-09-06T13:47:02.487950 #71830] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2019-09-06T13:47:02.503261 #71830] DEBUG -- :   [1m[35m (9.6ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T13:47:02.504534 #71830] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-09-06T13:47:02.505335 #71830] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(6188764255880135685)[0m
+D, [2019-09-06T13:47:09.311514 #71846] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T13:47:09.554811 #71846] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T13:47:09.556764 #71846] DEBUG -- :   [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Maruf"], ["LIMIT", 1]]
+D, [2019-09-06T13:47:09.558109 #71846] DEBUG -- :   [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Maruf"], ["password_digest", "$2a$12$bUCjVPd56hP74g8KnB.5JeBeNsOKZaKrNMefiaE6tyl/B9CRcJxya"], ["created_at", "2019-09-06 18:47:09.556998"], ["updated_at", "2019-09-06 18:47:09.556998"]]
+D, [2019-09-06T13:47:09.559203 #71846] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-09-06T13:47:09.786619 #71846] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T13:47:09.787430 #71846] DEBUG -- :   [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Varvara"], ["LIMIT", 1]]
+D, [2019-09-06T13:47:09.788059 #71846] DEBUG -- :   [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Varvara"], ["password_digest", "$2a$12$By3RnQ/SNBQ0ClI.HmDhwuwWwhSpEFz4iyVl9hunaIpL2zO/8Ax4i"], ["created_at", "2019-09-06 18:47:09.787540"], ["updated_at", "2019-09-06 18:47:09.787540"]]
+D, [2019-09-06T13:47:09.789247 #71846] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-09-06T13:47:09.806562 #71846] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T13:47:09.832398 #71846] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T13:47:09.832878 #71846] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T13:47:09.833613 #71846] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T13:47:09.834015 #71846] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T13:47:09.834687 #71846] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T13:47:09.835023 #71846] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T13:47:09.835682 #71846] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T13:47:09.836056 #71846] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T13:47:09.836712 #71846] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T13:47:09.837039 #71846] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T13:47:09.837638 #71846] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T13:47:09.837932 #71846] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T13:47:09.838545 #71846] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T13:48:24.913601 #71879] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[35mCREATE DATABASE "Back_End_production" ENCODING = 'unicode'[0m
+D, [2019-09-06T13:48:34.294741 #71896] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6188764255880135685)[0m
+D, [2019-09-06T13:48:34.307536 #71896] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T13:48:34.311342 #71896] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2019-09-06T13:48:34.315488 #71896] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T13:48:34.316194 #71896] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-09-06T13:48:34.316484 #71896] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6188764255880135685)[0m
+D, [2019-09-06T13:59:57.382323 #72161] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6188764255880135685)[0m
+D, [2019-09-06T13:59:57.398292 #72161] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T13:59:57.406487 #72161] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2019-09-06T13:59:57.413744 #72161] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T13:59:57.414732 #72161] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-09-06T13:59:57.415099 #72161] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6188764255880135685)[0m
+D, [2019-09-06T14:02:02.111795 #72208] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T14:02:02.399331 #72208] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:02:02.402408 #72208] DEBUG -- :   [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Maruf"], ["LIMIT", 1]]
+D, [2019-09-06T14:02:02.406066 #72208] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:02:02.626478 #72208] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:02:02.627363 #72208] DEBUG -- :   [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Varvara"], ["LIMIT", 1]]
+D, [2019-09-06T14:02:02.628172 #72208] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:02:02.655201 #72208] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:02:02.662311 #72208] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:02:02.662828 #72208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:02:02.663608 #72208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:02:02.664014 #72208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:02:02.664740 #72208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:02:02.665119 #72208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:02:02.665814 #72208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:02:02.666169 #72208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:02:02.666862 #72208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:02:02.667217 #72208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:02:02.667912 #72208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:02:02.668293 #72208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:02:02.668973 #72208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:11:18.360480 #72486] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6188764255880135685)[0m
+D, [2019-09-06T14:11:18.380478 #72486] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T14:11:18.388231 #72486] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2019-09-06T14:11:18.395241 #72486] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:11:18.396730 #72486] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-09-06T14:11:18.397179 #72486] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6188764255880135685)[0m
+D, [2019-09-06T14:11:53.686130 #72515] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6188764255880135685)[0m
+D, [2019-09-06T14:11:53.693583 #72515] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T14:11:53.697360 #72515] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2019-09-06T14:11:53.701560 #72515] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:11:53.702452 #72515] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-09-06T14:11:53.702854 #72515] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6188764255880135685)[0m
+D, [2019-09-06T14:11:59.493565 #72532] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T14:11:59.761036 #72532] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:11:59.763028 #72532] DEBUG -- :   [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Maruf"], ["LIMIT", 1]]
+D, [2019-09-06T14:11:59.769616 #72532] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:11:59.995986 #72532] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:11:59.996835 #72532] DEBUG -- :   [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Varvara"], ["LIMIT", 1]]
+D, [2019-09-06T14:11:59.997786 #72532] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:12:00.013856 #72532] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:12:00.023570 #72532] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:12:00.024406 #72532] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:12:00.041885 #72532] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:12:00.042347 #72532] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:12:00.043097 #72532] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:12:00.043471 #72532] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:12:00.044189 #72532] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:12:00.044556 #72532] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:12:00.045271 #72532] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:12:00.045627 #72532] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:12:00.046343 #72532] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:12:00.046707 #72532] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:12:00.047402 #72532] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:14:22.068572 #72568] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T14:14:22.072372 #72568] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T14:14:22.073375 #72568] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T14:14:22.075066 #72568] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6188764255880135685)[0m
+D, [2019-09-06T14:14:22.075930 #72568] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+I, [2019-09-06T14:14:22.076096 #72568]  INFO -- : Migrating to CreateMeals (20190905205358)
+D, [2019-09-06T14:14:22.078668 #72568] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:14:22.086580 #72568] DEBUG -- :   [1m[35m (4.8ms)[0m  [1m[35mDROP TABLE "meals"[0m
+D, [2019-09-06T14:14:22.088634 #72568] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Destroy (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190905205358"]]
+D, [2019-09-06T14:14:22.097667 #72568] DEBUG -- :   [1m[35m (8.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-09-06T14:14:22.098398 #72568] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(6188764255880135685)[0m
+D, [2019-09-06T14:14:29.938018 #72585] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T14:14:29.939389 #72585] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T14:14:29.940259 #72585] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T14:14:29.941782 #72585] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6188764255880135685)[0m
+D, [2019-09-06T14:14:29.942579 #72585] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+I, [2019-09-06T14:14:29.942701 #72585]  INFO -- : Migrating to CreateRecipes (20190905164146)
+D, [2019-09-06T14:14:29.945788 #72585] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:14:29.951425 #72585] DEBUG -- :   [1m[35m (3.9ms)[0m  [1m[35mDROP TABLE "recipes"[0m
+D, [2019-09-06T14:14:29.951753 #72585] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:14:29.952111 #72585] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6188764255880135685)[0m
+D, [2019-09-06T14:14:35.885179 #72601] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T14:14:35.886611 #72601] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T14:14:35.887474 #72601] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T14:14:35.888980 #72601] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6188764255880135685)[0m
+D, [2019-09-06T14:14:35.889733 #72601] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+I, [2019-09-06T14:14:35.889846 #72601]  INFO -- : Migrating to CreateRecipes (20190905164146)
+D, [2019-09-06T14:14:35.890795 #72601] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:14:35.893148 #72601] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE "recipes"[0m
+D, [2019-09-06T14:14:35.893406 #72601] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:14:35.893756 #72601] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6188764255880135685)[0m
+D, [2019-09-06T14:15:21.015037 #72628] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T14:15:21.019574 #72628] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+D, [2019-09-06T14:15:21.020943 #72628] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T14:15:21.021988 #72628] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+D, [2019-09-06T14:15:21.023320 #72628] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T14:15:21.024669 #72628] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+D, [2019-09-06T14:16:24.233085 #72648] DEBUG -- :   [1m[35m (7847.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "Back_End_production"[0m
+D, [2019-09-06T14:17:43.133987 #72677] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6188764255880135685)[0m
+D, [2019-09-06T14:17:43.149997 #72677] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+I, [2019-09-06T14:17:43.151494 #72677]  INFO -- : Migrating to CreateMeals (20190905205358)
+D, [2019-09-06T14:17:43.154688 #72677] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:17:43.159548 #72677] DEBUG -- :   [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "meals" ("id" bigserial primary key, "mealplan_id" integer, "recipe_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+D, [2019-09-06T14:17:43.163066 #72677] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190905205358"]]
+D, [2019-09-06T14:17:43.163949 #72677] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-09-06T14:17:43.168236 #72677] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2019-09-06T14:17:43.175173 #72677] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:17:43.176214 #72677] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-09-06T14:17:43.176651 #72677] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6188764255880135685)[0m
+D, [2019-09-06T14:17:52.925684 #72695] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6188764255880135685)[0m
+D, [2019-09-06T14:17:52.932797 #72695] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T14:17:52.936816 #72695] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2019-09-06T14:17:52.941071 #72695] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:17:52.941833 #72695] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-09-06T14:17:52.942114 #72695] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6188764255880135685)[0m
+D, [2019-09-06T14:18:02.196228 #72712] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T14:18:02.437563 #72712] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:18:02.439566 #72712] DEBUG -- :   [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Maruf"], ["LIMIT", 1]]
+D, [2019-09-06T14:18:02.443612 #72712] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:18:02.677888 #72712] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:18:02.678737 #72712] DEBUG -- :   [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Varvara"], ["LIMIT", 1]]
+D, [2019-09-06T14:18:02.679567 #72712] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:18:02.705376 #72712] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:18:02.712005 #72712] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:18:02.712450 #72712] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:18:02.713213 #72712] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:18:02.713605 #72712] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:18:02.714345 #72712] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:18:02.714762 #72712] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:18:02.715478 #72712] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:18:02.715815 #72712] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:18:02.716429 #72712] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:18:02.716730 #72712] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:18:02.717339 #72712] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:18:02.717663 #72712] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:18:02.718324 #72712] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:20:18.586212 #72769] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6188764255880135685)[0m
+D, [2019-09-06T14:20:18.600586 #72769] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T14:20:18.607274 #72769] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2019-09-06T14:20:18.613259 #72769] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:20:18.614274 #72769] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-09-06T14:20:18.614733 #72769] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6188764255880135685)[0m
+D, [2019-09-06T14:20:23.406032 #72785] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T14:20:23.667569 #72785] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:20:23.669368 #72785] DEBUG -- :   [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Maruf"], ["LIMIT", 1]]
+D, [2019-09-06T14:20:23.674244 #72785] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:20:23.889417 #72785] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:20:23.890153 #72785] DEBUG -- :   [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Varvara"], ["LIMIT", 1]]
+D, [2019-09-06T14:20:23.890863 #72785] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:20:23.914537 #72785] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:20:23.920582 #72785] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:20:23.921024 #72785] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:20:23.921631 #72785] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:20:23.921927 #72785] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:20:23.922538 #72785] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:20:23.922882 #72785] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:20:23.923480 #72785] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:20:23.923762 #72785] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:20:23.924378 #72785] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:20:23.924672 #72785] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:20:23.925250 #72785] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:20:23.925586 #72785] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:20:23.926201 #72785] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:22:42.023957 #72836] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6188764255880135685)[0m
+D, [2019-09-06T14:22:42.039884 #72836] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T14:22:42.046116 #72836] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2019-09-06T14:22:42.052126 #72836] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:22:42.052941 #72836] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-09-06T14:22:42.053264 #72836] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6188764255880135685)[0m
+D, [2019-09-06T14:22:46.710982 #72853] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T14:22:46.955153 #72853] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:22:46.957271 #72853] DEBUG -- :   [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Maruf"], ["LIMIT", 1]]
+D, [2019-09-06T14:22:46.962647 #72853] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:22:47.176564 #72853] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:22:47.177312 #72853] DEBUG -- :   [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Varvara"], ["LIMIT", 1]]
+D, [2019-09-06T14:22:47.178011 #72853] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:22:47.190583 #72853] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:22:47.209225 #72853] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:22:47.209646 #72853] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:22:47.210310 #72853] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:22:47.210605 #72853] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:22:47.211215 #72853] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:22:47.211526 #72853] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:22:47.212145 #72853] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:22:47.212469 #72853] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:22:47.213081 #72853] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:22:47.213370 #72853] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:22:47.214004 #72853] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:22:47.214410 #72853] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:22:47.215028 #72853] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:22:47.227898 #72853] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:22:47.230665 #72853] DEBUG -- :   [1m[36mRecipe Create (1.9ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "img", "ingredients", "instructions", "calories", "fat", "carbohydrates", "protein", "fiber", "servings", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Eggs and Bacon"], ["img", "https://s3.amazonaws.com/rtacabinet/recipes/beta/wp-content/uploads/2017/10/28151038/5.jpg"], ["ingredients", "2 eggs, 2 slice of bacon"], ["instructions", "In an unheated skillet, place 2 strips of bacon. Increase the heat to medium and let the bacon cook for 8 minutes, flipping halfway through. While the bacon cooks, prepare your skull eggs.\nHeat a pan over medium-high heat and add the skull egg mold. Spray the pan and mold with cooking spray and let it heat for 1 minute. Crack one egg into the eye of the mold and then crack another egg into the second eye. Season with salt & pepper and cover the pan. Let the eggs cook, covered, for 4 minutes, or until desired doneness of the egg yolk. Remove the cover, lift the mold and plate your eggs. Add the bacon to your plate for a deathly delicious breakfast."], ["calories", 350], ["fat", 28], ["carbohydrates", 2], ["protein", 21], ["fiber", 0], ["servings", 1], ["created_at", "2019-09-06 19:22:47.228110"], ["updated_at", "2019-09-06 19:22:47.228110"]]
+D, [2019-09-06T14:22:47.231745 #72853] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-09-06T14:22:47.232307 #72853] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:22:47.233322 #72853] DEBUG -- :   [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "img", "ingredients", "instructions", "calories", "fat", "carbohydrates", "protein", "fiber", "servings", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Tuna Avocado Salad"], ["img", "https://images.eatthismuch.com/site_media/img/924619_Tahirah_Fo_Ferah_be330bb4-505c-4ea2-b074-26ad678577a2.jpg"], ["ingredients", "1/4 avocado, 3oz tuna"], ["instructions", "Using a fork, mash up the tuna really well until the consistency is even. Mix in the avocado until smooth. Add salt and pepper to taste. Enjoy!"], ["calories", 124], ["fat", 6], ["carbohydrates", 4], ["protein", 15], ["fiber", 3], ["servings", 1], ["created_at", "2019-09-06 19:22:47.232514"], ["updated_at", "2019-09-06 19:22:47.232514"]]
+D, [2019-09-06T14:22:47.233969 #72853] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-09-06T14:26:35.302486 #73070] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-09-06T14:26:35.546691 #73070] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:26:35.549213 #73070] DEBUG -- :   [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Maruf"], ["LIMIT", 1]]
+D, [2019-09-06T14:26:35.552928 #73070] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:26:35.776017 #73070] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:26:35.776864 #73070] DEBUG -- :   [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Varvara"], ["LIMIT", 1]]
+D, [2019-09-06T14:26:35.777559 #73070] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:26:35.791389 #73070] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:26:35.812038 #73070] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:26:35.812529 #73070] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:26:35.813314 #73070] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:26:35.813712 #73070] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:26:35.814387 #73070] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:26:35.814716 #73070] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:26:35.815351 #73070] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:26:35.815693 #73070] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:26:35.816356 #73070] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:26:35.816658 #73070] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:26:35.817320 #73070] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:26:35.817615 #73070] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:26:35.818247 #73070] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+D, [2019-09-06T14:26:35.832860 #73070] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:26:35.834249 #73070] DEBUG -- :   [1m[36mRecipe Create (0.5ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "img", "ingredients", "instructions", "calories", "fat", "carbohydrates", "protein", "fiber", "servings", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Eggs and Bacon"], ["img", "https://s3.amazonaws.com/rtacabinet/recipes/beta/wp-content/uploads/2017/10/28151038/5.jpg"], ["ingredients", "2 eggs, 2 slice of bacon"], ["instructions", "In an unheated skillet, place 2 strips of bacon. Increase the heat to medium and let the bacon cook for 8 minutes, flipping halfway through. While the bacon cooks, prepare your skull eggs.\nHeat a pan over medium-high heat and add the skull egg mold. Spray the pan and mold with cooking spray and let it heat for 1 minute. Crack one egg into the eye of the mold and then crack another egg into the second eye. Season with salt & pepper and cover the pan. Let the eggs cook, covered, for 4 minutes, or until desired doneness of the egg yolk. Remove the cover, lift the mold and plate your eggs. Add the bacon to your plate for a deathly delicious breakfast."], ["calories", 350], ["fat", 28], ["carbohydrates", 2], ["protein", 21], ["fiber", 0], ["servings", 1], ["created_at", "2019-09-06 19:26:35.833099"], ["updated_at", "2019-09-06 19:26:35.833099"]]
+D, [2019-09-06T14:26:35.835199 #73070] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-09-06T14:26:35.835657 #73070] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T14:26:35.836590 #73070] DEBUG -- :   [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "img", "ingredients", "instructions", "calories", "fat", "carbohydrates", "protein", "fiber", "servings", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Tuna Avocado Salad"], ["img", "https://images.eatthismuch.com/site_media/img/924619_Tahirah_Fo_Ferah_be330bb4-505c-4ea2-b074-26ad678577a2.jpg"], ["ingredients", "1/4 avocado, 3oz tuna"], ["instructions", "Using a fork, mash up the tuna really well until the consistency is even. Mix in the avocado until smooth. Add salt and pepper to taste. Enjoy!"], ["calories", 124], ["fat", 6], ["carbohydrates", 4], ["protein", 15], ["fiber", 3], ["servings", 1], ["created_at", "2019-09-06 19:26:35.835808"], ["updated_at", "2019-09-06 19:26:35.835808"]]
+D, [2019-09-06T14:26:35.837229 #73070] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
