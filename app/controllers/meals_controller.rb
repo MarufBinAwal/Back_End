@@ -1,8 +1,8 @@
 class MealsController < ApplicationController
 
     def show
-        mealplan = Mealplan.find(params[:id])
-        render json: mealplan
+        meal = Meal.find(params[:id])
+        render json: meal
     end
 
     def create

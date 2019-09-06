@@ -1,0 +1,30 @@
+D, [2019-09-06T11:17:31.285453 #70146] DEBUG -- :   [1m[35m (565.0ms)[0m  [1m[35mCREATE DATABASE "Back_End_production" ENCODING = 'unicode'[0m
+D, [2019-09-06T11:19:04.352763 #70168] DEBUG -- :   [1m[35m (53.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+D, [2019-09-06T11:19:04.363301 #70168] DEBUG -- :   [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+D, [2019-09-06T11:19:04.364295 #70168] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6188764255880135685)[0m
+D, [2019-09-06T11:19:04.405934 #70168] DEBUG -- :   [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+I, [2019-09-06T11:19:04.424084 #70168]  INFO -- : Migrating to CreateUsers (20190905164104)
+D, [2019-09-06T11:19:04.434408 #70168] DEBUG -- :   [1m[35m (4.8ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T11:19:04.443621 #70168] DEBUG -- :   [1m[35m (8.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+D, [2019-09-06T11:19:04.448367 #70168] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (2.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190905164104"]]
+D, [2019-09-06T11:19:04.449268 #70168] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+I, [2019-09-06T11:19:04.449398 #70168]  INFO -- : Migrating to CreateMealplans (20190905164126)
+D, [2019-09-06T11:19:04.458237 #70168] DEBUG -- :   [1m[35m (6.8ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T11:19:04.461684 #70168] DEBUG -- :   [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "mealplans" ("id" bigserial primary key, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+D, [2019-09-06T11:19:04.463525 #70168] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190905164126"]]
+D, [2019-09-06T11:19:04.464559 #70168] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+I, [2019-09-06T11:19:04.464748 #70168]  INFO -- : Migrating to CreateRecipies (20190905164146)
+D, [2019-09-06T11:19:04.467169 #70168] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T11:19:04.473094 #70168] DEBUG -- :   [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "recipies" ("id" bigserial primary key, "name" text, "img" character varying, "ingredients" character varying, "intructions" character varying, "calories" integer, "fat" integer, "carbohydrates" integer, "protein" integer, "fiber" integer, "servings" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+D, [2019-09-06T11:19:04.474322 #70168] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190905164146"]]
+D, [2019-09-06T11:19:04.475143 #70168] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+I, [2019-09-06T11:19:04.475281 #70168]  INFO -- : Migrating to CreateMeals (20190905205358)
+D, [2019-09-06T11:19:04.478064 #70168] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T11:19:04.481952 #70168] DEBUG -- :   [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "meals" ("id" bigserial primary key, "mealplan_id" integer, "recipe_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+D, [2019-09-06T11:19:04.483176 #70168] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190905205358"]]
+D, [2019-09-06T11:19:04.483965 #70168] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-09-06T11:19:04.496166 #70168] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2019-09-06T11:19:04.501035 #70168] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2019-09-06T11:19:04.503012 #70168] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "production"], ["created_at", "2019-09-06 16:19:04.501322"], ["updated_at", "2019-09-06 16:19:04.501322"]]
+D, [2019-09-06T11:19:04.504048 #70168] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-09-06T11:19:04.505108 #70168] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_advisory_unlock(6188764255880135685)[0m

@@ -31,7 +31,7 @@ class MealplanController < ApplicationController
     def mealplan_params
         params.permit(
         :user_id,
-        :macros_total,
+        :days
         )
     end
 end
