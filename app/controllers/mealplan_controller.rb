@@ -19,7 +19,7 @@ class MealplanController < ApplicationController
     def index
        # mealplan = self.current_user.mealplans
         mealplans = Mealplan.all
-        render json: mealplans, only: [:id, :days],  :include => {:meals => {only:[:name], :include => :recipe}} 
+        render json: mealplans, only: [:id, :days],  :include => {:meals => {only:[:name, :id], :include => :recipe}} 
 
     end
 
