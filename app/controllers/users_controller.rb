@@ -8,6 +8,7 @@ class UsersController < ApplicationController
     end
 
     def create 
+        # byebug
         user = User.create(user_params)
         render json: user
         
@@ -29,12 +30,15 @@ class UsersController < ApplicationController
     end
 
     def authenticate
-        # user = User.find_by(username: params[:username])
-        # if user != nil && user.authenticate(params[:password])
-        #     render json: user, methods: [ :auth_token ]
-        # else
-        #     render json: { error: true, message: 'Login failed' }
-        # end 
+        user = User.find_by(username: params[:username])
+
+        if user != nil && user.authenticate(params[:password])
+            # byebug
+
+            render json: {user: user, token: user.auth_token} 
+        else
+            render json: { error: true, message: 'Login failed' }
+        end 
     end
 
    

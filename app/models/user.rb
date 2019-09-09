@@ -6,6 +6,7 @@ class User < ApplicationRecord
     validates :password, length: { in: 6..20 }
 
     def auth_token
+        # byebug
         JWT.encode({ id: self.id}, 'woeufnsldnfjd')
     end
 
