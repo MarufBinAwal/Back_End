@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2019_09_05_205358) do
   create_table "meals", force: :cascade do |t|
     t.integer "mealplan_id"
     t.integer "recipe_id"
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -34,6 +35,7 @@ ActiveRecord::Schema.define(version: 2019_09_05_205358) do
     t.string "img"
     t.string "ingredients"
     t.string "instructions"
+    t.string "category"
     t.integer "calories"
     t.integer "fat"
     t.integer "carbohydrates"

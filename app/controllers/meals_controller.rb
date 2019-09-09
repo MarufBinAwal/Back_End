@@ -7,12 +7,20 @@ class MealsController < ApplicationController
 
     def create
         meal = Meal.new(meal_params)
-        meal.mealplan = self.id
-        meal.recipe = self.id
+        # meal.mealplan = self.id
+        # meal.recipe = self.id
+        # meal.save
+        # render json: mealplan
         meal.save
-        render json: mealplan
+        render json: meal
     end
 
+    def destroy
+        meal = Meal.find(params[:id])
+        meal.destroy
+        meals = Meal.all
+        render json: meals
+    end
 
     def index
         meal = Meal.all
